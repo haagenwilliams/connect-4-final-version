@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.1">
+  <diagram name="Page-1" id="chQsZeWDrYgBy3w6YEUo">
+    <mxGraphModel dx="1194" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-1" value="GameScreen" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="30" width="170" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-2" value="+ main(args: String [ ] ): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-1">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-3" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.476;exitY=1.115;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Px3efJS2MWYXd3ViVbcv-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="320" as="sourcePoint" />
+            <mxPoint x="360" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-4" value="IGameBoard" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="140" width="320" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-5" value="+ &lt;span style=&quot;line-height: 200%;&quot; class=&quot;hljs-title function_ invoke__&quot;&gt;checkIfFree&lt;/span&gt;(&lt;span style=&quot;line-height: 200%;&quot; class=&quot;hljs-attr&quot;&gt;c&lt;/span&gt;: &lt;span style=&quot;line-height: 200%;&quot; class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;): &lt;span style=&quot;line-height: 200%;&quot; class=&quot;hljs-keyword&quot;&gt;boolean&lt;/span&gt;&lt;div style=&quot;line-height: 200%;&quot;&gt;&lt;div&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;dropToken&lt;/span&gt;(&lt;span class=&quot;hljs-attr&quot;&gt;p&lt;/span&gt;: char, &lt;span class=&quot;hljs-attr&quot;&gt;c&lt;/span&gt;: &lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;): &lt;span class=&quot;hljs-keyword&quot;&gt;void&lt;/span&gt;&lt;br&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;checkForWin&lt;/span&gt;(&lt;span class=&quot;hljs-attr&quot;&gt;c&lt;/span&gt;: &lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;): &lt;span class=&quot;hljs-keyword&quot;&gt;boolean&lt;/span&gt;&lt;br&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;checkTie&lt;/span&gt;(): &lt;span class=&quot;hljs-keyword&quot;&gt;boolean&lt;/span&gt;&lt;br&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;checkHorizWin&lt;/span&gt;(&lt;span class=&quot;hljs-attr&quot;&gt;pos&lt;/span&gt;: BoardPosition, &lt;span class=&quot;hljs-attr&quot;&gt;p&lt;/span&gt;: char): &lt;span class=&quot;hljs-keyword&quot;&gt;boolean&lt;/span&gt;&lt;br&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;checkVertWin&lt;/span&gt;(&lt;span class=&quot;hljs-attr&quot;&gt;pos&lt;/span&gt;: BoardPosition, &lt;span class=&quot;hljs-attr&quot;&gt;p&lt;/span&gt;: char): &lt;span class=&quot;hljs-keyword&quot;&gt;boolean&lt;/span&gt;&lt;br&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;checkDiagWin&lt;/span&gt;(&lt;span class=&quot;hljs-attr&quot;&gt;pos&lt;/span&gt;: BoardPosition, &lt;span class=&quot;hljs-attr&quot;&gt;p&lt;/span&gt;: char): &lt;span class=&quot;hljs-keyword&quot;&gt;boolean&lt;/span&gt;&lt;br&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;whatsAtPos&lt;/span&gt;(&lt;span class=&quot;hljs-attr&quot;&gt;pos&lt;/span&gt;: BoardPosition): char&lt;br&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;isPlayerAtPos&lt;/span&gt;(&lt;span class=&quot;hljs-attr&quot;&gt;pos&lt;/span&gt;: BoardPosition, &lt;span class=&quot;hljs-attr&quot;&gt;p&lt;/span&gt;: char): &lt;span class=&quot;hljs-keyword&quot;&gt;boolean&lt;/span&gt;&lt;br&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;getNumToWin&lt;/span&gt;(): &lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;&lt;br&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;getRows&lt;/span&gt;(): &lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;&lt;br&gt;+ &lt;span class=&quot;hljs-title function_ invoke__&quot;&gt;getColumns&lt;/span&gt;(): &lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-4">
+          <mxGeometry y="26" width="320" height="304" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-6" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.566;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Px3efJS2MWYXd3ViVbcv-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="408" y="614" as="sourcePoint" />
+            <mxPoint x="504" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-7" value="AbsGameboard" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="456" y="542" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-8" value="- dimesions: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-7">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-7">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-10" value="&lt;div&gt;+ toString( ): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-7">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-11" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.194;exitY=1.115;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Px3efJS2MWYXd3ViVbcv-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="746" as="sourcePoint" />
+            <mxPoint x="444" y="696" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-12" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.656;exitY=1.115;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Px3efJS2MWYXd3ViVbcv-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="566" y="698" as="sourcePoint" />
+            <mxPoint x="616" y="696" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-13" value="GameBoard" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="696" width="300" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-14" value="&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; board: char[][]&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; rows: int&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;-&lt;/span&gt; columns: int&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-section&quot;&gt;- numToWin: int&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-13">
+          <mxGeometry y="26" width="300" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-13">
+          <mxGeometry y="110" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-16" value="&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; GameBoard(rows: int, columns: int, numToWin: int)&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; dropToken(p: char, c: int): void&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; whatsAtPos(pos: BoardPosition): char&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; getNumToWin(): int&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; getRows(): int&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; getColumns(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-13">
+          <mxGeometry y="140" width="300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-17" value="GameBoardMem" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="552" y="696" width="300" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-18" value="- board: Map&amp;lt;char, List&amp;lt;BoardPosition&amp;gt;&amp;gt;&amp;nbsp;&lt;div style=&quot;line-height: 180%;&quot;&gt;- rows: &lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;line-height: 180%;&quot;&gt;- columns: &lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;&lt;br&gt;- numToWin: &lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-17">
+          <mxGeometry y="26" width="300" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-17">
+          <mxGeometry y="110" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-20" value="&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; GameBoard(rows: int, columns: int, numToWin: int)&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; dropToken(p: char, c: int): void&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; whatsAtPos(pos: BoardPosition): char: boolean&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; getNumToWin(): int&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; getRows(): int&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; getColumns(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-17">
+          <mxGeometry y="140" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-21" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.377;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Px3efJS2MWYXd3ViVbcv-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="1166" as="sourcePoint" />
+            <mxPoint x="444" y="1152" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-22" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.497;exitY=1.021;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Px3efJS2MWYXd3ViVbcv-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="1166" as="sourcePoint" />
+            <mxPoint x="588" y="1152" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-23" value="BoardPosition" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1152" width="300" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-24" value="&lt;div style=&quot;line-height: 180%;&quot;&gt;- row: &lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;line-height: 180%;&quot;&gt;- column: &lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-23">
+          <mxGeometry y="26" width="300" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-23">
+          <mxGeometry y="70" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Px3efJS2MWYXd3ViVbcv-26" value="&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt;&amp;nbsp;BoardPosition(aRow: int, aColumn: int)&amp;nbsp;&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt;&amp;nbsp;getRow(): int&amp;nbsp;&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;&lt;span class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; getColumn(): int +&lt;/span&gt; getNumToWin(): int&lt;br&gt;&lt;span style=&quot;line-height: 180%;&quot; class=&quot;hljs-bullet&quot;&gt;&lt;span class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt; toString(): String&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;line-height: 180%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;hljs-bullet&quot;&gt;+&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt; equals(obj: Object): boolean&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Px3efJS2MWYXd3ViVbcv-23">
+          <mxGeometry y="100" width="300" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

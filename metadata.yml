@@ -1,0 +1,16 @@
+---
+:id: 293141103
+:submitters:
+- :name: Haagen Dane Williams
+  :email: haagenw@clemson.edu
+- :name: Jake Barz
+  :email: jbarz@clemson.edu
+- :name: George K Jubenvill
+  :email: gjubenv@clemson.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2024-11-27 03:23:08.199154000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2024-11-26 19:23:08.199154000 Z
+:status: processed
+:score: 88.546
